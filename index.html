@@ -5,116 +5,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clément Douale Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <h1>Clément Douale</h1>
-        <p>Full Stack Engineer</p>
+        <p>DevOps Engineer</p>
+        <div id="menu-icon" onclick="toggleMenu()">☰</div>
+        <nav id="nav-menu">
+        <ul>
+            <li><a href="#self-description">Self Description</a></li>
+            <li><a href="#experience">Experience Highlights</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        </nav>
     </header>
 
-    <nav>
-        <!-- Navigation links can go here -->
-    </nav>
+    
 
     <main>
         <section id="self-description">
-            <h2>Self-Description</h2>
-            <p>A recent Computer Engineering graduate with a significant 3-year experience in Information Systems, I have excelled in various roles ranging from team member to team leader. My expertise encompasses designing microservices, developing robust backend and frontend solutions for both web and mobile platforms, including Android and iOS. My journey also includes orchestrating deployment, transitioning infrastructure to cloud-based platforms like Kubernetes, Openshift, and AWS IaaS, along with extensive testing and monitoring</p>
-            <!-- More content -->
+            <div class="description-container">
+                <img src="/assets/images/Clement Profesionnal Photo.jpg" alt="Your Name" class="description-image">
+                <div class="description-text">
+                    <h2>Self-Description</h2>
+                    <p>A recent Computer Engineering graduate with a significant 3-year experience in Information Systems, I have excelled in various roles ranging from team member to team leader. My expertise encompasses designing microservices, developing robust backend and frontend solutions for both web and mobile platforms, including Android and iOS. The core part of my journey includes orchestrating deployments, transitioning on-premise infrastructures to containerized ones and cloud-based platforms,  along with extensive testing and monitoring to detect, analyze and solve performance problems.</p>
+                </div>
+            </div>
         </section>
+        
 
         <section id="experience">
             <h2>Experience Highlights</h2>
-    
-            <div class="project">
-                <h3>Overall Full Stack Engineer Experience</h3>
-                <p><li>Developed APIs using Java and NodeJS, Spring Boot Framework, and MVC pattern. </li></p>
-                <p><li>Implemented authentication using Keycloak for OAuth tokens, integrated with Google Identity Provider.</li> </p>
-                <p><li>Managed data with MySQL database systems. Conducted regression and functional testing with Postman.</li></p>
-                <p> <li>Frontend development using React, NextJS, Flutter & Dart along with BLOC library for state management. Authored a blog post on BLOC for state management.</li></p>
-                <p> <a href="https://medium.com/leanovia/application-mobile-state-management-library-bloc-e11a72a101b" target="_blank">Read Blog Post</a></p>
-            </div>
-    
-            <div class="project">
-                <h3>Time and Projects Management for Consultants</h3>
-                <p><li>Built a system for consultants to track time spent on various projects, across diverse clients, through different tasks, enhancing productivity and project management. </li> </p>
-                <p><li>Integrated features for scheduling, reporting, and real-time updates.</li></p>
-            </div>
-    
-            <div class="project">
-                <h3>Inventory Management System</h3>
-                <p><li>Developed an application to manage company inventory including PCs, books, keys.</li></p>
-                <p><li>Implemented features for tracking, updating, and reporting inventory status. </li></p>
-                <p><li>Push and mail notification system using Kafka when an alert was sent through the creation of an issue.</li></p>
-            </div>
-    
-            <div class="project">
-                <h3>Days Off Management Application</h3>
-                <p><li>Created a system for managing employee leave requests and approvals. </li></p>
-                <p><li>Incorporated a calendar view for easy tracking of team availability and leave balances. </li></p>
-                <p><li>Incorporated history review to follow each request, approval, and cancelation.</li></p>
-                <p><li>Integrated the system with Google Calendar and implemented email and push notifications using Kafka to notify managers of employee requests.</p>
-            </div>
-    
-            <div class="project">
-                <h3>Employee Management System</h3>
-                <p><li>Developed a comprehensive solution for managing employee data, performance reviews, and departmental information.</li></p>
-                <p><li>Included features for data visualization and easy access to employee records.</li></p>
-            </div>
-    
-            <div class="project">
-                <h3>Invoices Management Application</h3>
-                <p><li>Built an application for generating, tracking, and managing invoices. </li></p>
-                <p><li>Streamlined the process of invoice creation, approval, and distribution. </li></p>
-                <p><li>Implemented a mail and push notification system using Kafka to alert about upcoming invoice payment dates.</li></p>
-            </div>
-    
-            <div class="project">
-                <h3>Form Students Evaluating Application</h3>
-                <p><li>Built an application for generating, updating and completing forms aimed at students for exams.</li></p>
-            </div>
-    
-            <div class="project">
-                <h3>Chat Application</h3>
-                <p><li>Developed a real-time web-application to handle private and group communications using Javascript stack with NodeJS and NextJS.</li></p>
-            </div>
-    
-            <div class="project">
-                <h3>Containerization & Cloud Migration Expert</h3>
-                <p><li>Led migration projects to Kubernetes and Openshift. </li></p>
-                <p><li>Implemented infrastructure solutions on AWS IaaS.</li></p>
-            </div>
-        
-
-            <div class="project">
-                <h3>Quality Assurance</h3>
-                <p><li>roficient in testing tools like Postman, Selenium, Jmeter, Neoload</li></p>
-                <p><li>Experience in setting up CI/CD pipelines using Git</li></p>
+            <div class="experience-container">
+                    <div class="project">
+                        <h3><a href="DevOps.html">Overall DevOps Engineer Experience</a></h3>
+                    </div>
             </div>
 
             <div class="project">
-                <h3>Monitoring Systems Expert</h3>
-                <p><li>Experience with Grafana, Prometheus, Elastic Stack, Dynatrace, and Datadog</li></p>
+                <h3><a href="Monitoring.html">Monitoring Systems Expert</a></h3>
             </div>
 
             <div class="project">
-                <h3>Project Leadership</h3>
-                <p><li>Demonstrated leadership in several project initiatives, applying DevOps principles in practical IT environments</li></p>
+                <h3><a href="FullStack.html">Overall Full Stack Engineer Experience</a></h3>
             </div>
-        </section>
-        
-        <h2>Screenshot examples</h2>
-        <img src="images/daysoff.png" alt="view of days-off microservice">
-        <p><u><i>Example views of Days off management microservice</i></u></p>
-        <img src="images/postman.png" alt="Test Cases Postman">
-        <p><u><i>Examples of Postman Collections</i></u></p>
-        <img src="images/swagger.png" alt="Swagger API">
-        <p><u><i>Used Swagger to manage a strong and useful documentation for all projects</i></u></p>
 
-        
+            <div class="project">
+                <h3><a href="QA.html">Quality Assurance</a></h3>
+            </div>
+
+            <div class="project">
+                <h3><a href="CardGame.html">Card Game</a></h3>
+            </div>
+
+            <div class="project">
+                <h3><a href="Lidar.html">Lidar Project</a></h3>
+            </div>
+    
+               
         <br>
         <br>
-        <section id="skills">
+        <div class="toolkit-container">
+            <h1>My Favorite Toolkit</h1>
+            <div class="toolkit-card-container">
+              <div class="toolkit-card">
+                <h2>DevOps</h2>
+                <ul>
+                  <li>Kubernetes</li>
+                  <li>Docker</li>
+                  <li>Terraform</li>
+                  <li>Ansible</li>
+                  <li>Gitlab</li>
+                  <li>Jenkins</li>
+                  <li>AWS</li>
+                  <li>Grafana</li>
+                  <li>Prometheus</li>
+                </ul>
+              </div>
+              <div class="toolkit-card">
+                <h2>QA</h2>
+                <ul>
+                  <li>Jmeter</li>
+                </ul>
+              </div>
+              <div class="toolkit-card">
+                <h2>Backend</h2>
+                <ul>
+                  <li>Java</li>
+                  <li>SQL</li>
+                </ul>
+              </div>
+              <div class="toolkit-card">
+                <h2>Frontend</h2>
+                <ul>
+                  <li>Flutter</li>
+                  <li>React</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <a href="/assets/documents/Clement Douale DevOps Engineer.pdf" class="cv-link">Download CV <span class="material-icons">file_download</span></a>
+
+
+          <section id="skills">
             <h2>Key Skills and Attributes</h2>
             <p><li><b>Backend Development:</b> Proficient in Java, Spring Boot, advanced in NodeJS</li></p>
             <p><li><b>Frontend Development:</b> Skilled in Flutter, React, JavaScript, HTML/CSS</li></p>

@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+p {
+    font-size: 1em;
+}
+header {
+    background-color: #007bff; /* Primary Color */
+    color: white;
+}
+
+footer {
+    background-color: #007bff; /* Primary Color */
+    color: white;
+}
+
+.project, .toolkit-card {
+    background-color: white;
+    border-radius: 8px;
+}
+
+.project a, .cv-link {
+    background-color: #007bff; /* Primary Color */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+
+.project a:hover, .cv-link:hover {
+    background-color: #0056b3; /* Darker shade of Primary Color */
+}
+
+.toolkit-container, .toolkit-card {
+    background-color: #f8f8f8; /* Light Gray for contrast */
+}
+section {
+    margin: 1em 5%;
+    padding: 1em;
+    text-align: left; /* Align text to left for better readability */
+}
+
+.toolkit-card-container {
+    display: flex;
+    justify-content: space-around; /* Space out cards evenly */
+    flex-wrap: wrap;
+}
+
+.toolkit-card {
+    margin: 1rem;
+    padding: 1rem;
+    width: calc(33% - 2rem); /* 3 cards per row */
+}
+
+@media (max-width: 768px) {
+    .toolkit-card {
+        width: calc(50% - 2rem); /* 2 cards per row on smaller screens */
+    }
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #0056b3; /* Darker shade of Primary Color */
+}
+@media (max-width: 768px) {
+    .toolkit-card {
+        width: 100%; /* Full width on very small screens */
+    }
+}
+a, button {
+    transition: all 0.3s ease;
+}

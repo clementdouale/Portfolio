@@ -1,0 +1,8 @@
+region                = "ap-northeast-2"
+bucket_name           = "clementd-portfolio-bucket"
+domain_name           = "clementd-portfolio.com"
+index_document        = "index.html"
+error_document        = "error.html"
+cloudfront_origin_id  = "S3-clementd-portfolio-bucket"
+cloudfront_comment    = "OAI for clementd-portfolio.com"
+cloudfront_price_class= "PriceClass_100"
