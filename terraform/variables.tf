@@ -8,6 +8,11 @@ variable "bucket_name" {
   type        = string
 }
 
+variable "prefix" {
+  type        = string
+  description = "The prefix to be added to resource names"
+}
+
 variable "domain_name" {
   description = "The domain name for the portfolio"
   type        = string
@@ -35,5 +40,5 @@ variable "cloudfront_comment" {
 
 variable "cloudfront_price_class" {
   description = "The price class for the CloudFront distribution"
-  default     = "PriceClass_100"
+  default     = "PriceClass_200"
 }

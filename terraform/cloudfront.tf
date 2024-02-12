@@ -1,49 +1,58 @@
-resource "aws_cloudfront_distribution" "portfolio_distribution" {
-  origin {
-    domain_name = aws_s3_bucket.my_portfolio_bucket.bucket_regional_domain_name
-    origin_id   = "S3-clementd-portfolio-bucket"
-  }
+resource "aws_cloudfront_origin_access_control" "current" {
+  name                              = "OAC ${aws_s3_bucket.my_portfolio_bucket.bucket}"
+  origin_access_control_origin_type = "s3"
+  signing_behavior                  = "always"
+  signing_protocol                  = "sigv4"
+}
 
-  enabled = true
+resource "aws_cloudfront_distribution" "s3_distribution" {
+  depends_on = [aws_s3_bucket.my_portfolio_bucket]
+  origin {
+    domain_name              = aws_s3_bucket.my_portfolio_bucket.bucket_regional_domain_name
+    origin_id                = "${var.bucket_name}-origin"
+    origin_access_control_id = aws_cloudfront_origin_access_control.current.id
+  }
+  comment         = "${var.domain_name} distribution"
+  enabled         = true
+  is_ipv6_enabled = true
+  http_version    = "http2and3"
+  price_class     = "PriceClass_200" 
+  
+  aliases = [
+    var.domain_name,
+    "www.${var.domain_name}"
+  ]
   default_root_object = "index.html"
 
-
   default_cache_behavior {
-    allowed_methods  = ["GET", "HEAD"]
-    cached_methods   = ["GET", "HEAD"]
-    target_origin_id = "S3-clementd-portfolio-bucket"
-
-    forwarded_values {
-      query_string = false
-      cookies {
-        forward = "none"
-      }
-    }
-
-    viewer_protocol_policy = "allow-all"  # Allows both HTTP and HTTPS
-    min_ttl                = 0
-    default_ttl            = 3600
-    max_ttl                = 86400
-  }
-
-  price_class = "PriceClass_100"
-
+          cache_policy_id        = "658327ea-f89d-4fab-a63d-7e88639e58f6"
+          viewer_protocol_policy = "redirect-to-https"
+          allowed_methods        = ["DELETE", "GET", "HEAD", "OPTIONS", "PATCH", "POST", "PUT"]
+          cached_methods         = ["GET", "HEAD"]
+          compress               = true
+          target_origin_id       = "${var.bucket_name}-origin"
+      
+          function_association {
+            event_type   = "viewer-request"
+            function_arn = aws_cloudfront_function.www_redirect.arn
+          }
+        }
   restrictions {
     geo_restriction {
       restriction_type = "none"
+      locations        = []
     }
   }
-
   viewer_certificate {
-    acm_certificate_arn = aws_acm_certificate.my_portfolio_cert.arn
-    ssl_support_method  = "sni-only"
-    minimum_protocol_version = "TLSv1.2_2019"
+    acm_certificate_arn      = aws_acm_certificate_validation.cert_validation.certificate_arn
+    ssl_support_method       = "sni-only"
+    minimum_protocol_version = "TLSv1.2_2021"
   }
-
-  # depends_on = [aws_acm_certificate_validation.my_portfolio_cert_validation]
 }
 
-
-resource "aws_cloudfront_origin_access_identity" "portfolio_oai" {
-  comment = var.cloudfront_comment
+resource "aws_cloudfront_function" "www_redirect" {
+  name    = "${local.prefix}-www-redirect"
+  runtime = "cloudfront-js-1.0"
+  code    = file("./cloudfront-function.js")
+  publish = true
 }
