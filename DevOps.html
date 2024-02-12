@@ -4,93 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clément Douale Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="second.css">
 </head>
 <body>
     <header>
         <h1>Clément Douale</h1>
         <p>DevOps Experience</p>
         <nav>
-          <ul>
-            <li><a href="#experience">Projects</a></li>
-            <li><a href="#skills">Tech stack</a></li>
-            <li><a href="index.html">Back to main page</a></li>
-          </ul>
+            <ul>
+                <li><a href="#experience">Overall Experience</a></li>
+                <li><a href="#projects">Specific Projects</a></li>
+                <li><a href="index.html">Back to main page</a></li>
+            </ul>
         </nav>
     </header>
+
     <main>
+        <section id="experience" class="big-box">
+            <h2>Overall DevOps Experience</h2>
+                <p><li>Automated server deployments and configuration using various technologies such as Terraform, Ansible, Packer</li></p>
+                <p><li>Worked on various infrastructure context, from on-premise Linux environments, to containerized Openshift and Kubernetes environments, and Cloud environments with AWS</li> </p>
+                <p><li>Automated application deployments and storage management using Terraform, Python, Shell scripts and Cronjobs</li></p>
+                <p><li>Automated functionnal and regression testing with CI/CD pipelines using Gitlab Actions and Jenkins</li></p>
+                <p><li>Automated and configured monitoring solutions accross various environments, with visualization and alerting using Grafana, Prometheus, ELK Stack, Terraform, Python and Shell scripts</li></p>
+                <p><li>Maintained available and scalable environments using monitoring</li></p>
 
-
-        <section id="experience">
-            <h2>Experience Highlights</h2>
-    
-            
-              <div class="project" data-project="devops">Overall DevOps Engineer Experience</div>
-              <!-- Add more projects as needed -->
-          
-    
-
-              <div class="project">
-                <h3>Project Leadership</h3>
-                <p><li>Demonstrated leadership in several project initiatives, applying DevOps principles in practical IT environments</li></p>
-              </div>
-        </section>
+              </section>
         
-        
-        <br>
-        <br>
-        <div class="toolkit-container">
-            <h1>My Favorite Toolkit</h1>
-            <div class="toolkit-card-container">
-              <div class="toolkit-card">
-                <h2>Frontend</h2>
-                <ul>
-                  <li>Next.js</li>
-                  <li>TailwindCSS</li>
-                </ul>
-              </div>
-              <div class="toolkit-card">
-                <h2>Smart Contracts</h2>
-                <ul>
-                  <li>Solidity</li>
-                  <li>Ethereum</li>
-                </ul>
-              </div>
-              <div class="toolkit-card">
-                <h2>Backend</h2>
-                <ul>
-                  <li>Node.js</li>
-                  <li>SQL</li>
-                  <li>SQL</li>
-                </ul>
-              </div>
-              <div class="toolkit-card">
-                <h2>CI/CD</h2>
-                <ul>
-                  <li>Docker</li>
-                </ul>
-              </div>
-              <div class="toolkit-card">
-                <h2>Design</h2>
-                <ul>
-                  <li>Figma</li>
-                </ul>
-              </div>
+        <section id="projects" class="big-box">
+            <h2>More details : Projects</h2>
+            <div class="project-row">
+                <div class="project">
+                    <h3>End-to-end infrastructure automation deployment</h3>
+                    <p><li>Established the overall process of deployment through each step to automate : security, infrastructure, applications</li> </p>
+                    <p><li>Automated the deployment of Pfsense to manage WAN and LANs, network access, VPN, load balancing</li></p>
+                    <p><li>Automated the creation of servers using Terraform, Vcenter, Vmware and OVH</li> </p>
+                    <p><li>Customized ISO files from Fedora's ISO to prepare custom Openshift cluster installation using Packer</li></p>
+                    <p><li>Automated the configuration of Openshift clusters (production, staging, development) with users, roles, identity providers, certificates, storage, using Python and Shell scripts</li></p>
+                    <p><li>Automated the deployment of applications and microservices on Openshift clusters (production, staging, development) using Gitlab Runner and CI/CD, Python and Shell scripts</li></p>
+                    <p><li>Automated the deployment of monitoring on Openshift clusters (production, staging, development) using existing operators, and custom deployments, with dashboard visualisation, thresholds and alerting, using Grafana, Prometheus, ELK Stack, Helm, Python and Shell scripts</li></p>
+                    <p><li>Automated the backups of databases and their encryption, using CronJobs on Openshift and Python scripts</li></p>
+                    <p><li>Maintained the clusters available and managed the scale with new applications</li></p>
+
+                </div>
+
+                <div class="project">
+                  <h3>On-premise to AWS infrastructure</h3>
+                  <p><li>Migrated servers from on-premise to AWS environment : configured infrastructure and users using VPC, Route 53 and IAM</li></p>
+                  <p><li>Deployed applications on AWS environment on Kubernetes cluster using Terraform, EKS, EC2, RDS</li></p>
+                  <p><li>Deployed monitoring on AWS environment and set up thresholds and alerts using Terraform, Grafana, Prometheus</li></p>
+                </div>
+
+                <div class="project">
+                    <h3>Microservices on-premise</h3>
+                    <p><li>Configured Linux servers for microservices, databases and Oauth provider, using Ansible and Shell scripting.</li></p>
+                    <p><li>Installed ELK monitoring agents on servers and microservices to track ressources and overall performance and set up alerts with thresholds </li></p>
+                    <p><li>Automated the backups of databases and their encryption, using Linux CronJobs and Python scripts</li></p>
+                </div>
+
+                <div class="project">
+                  <h3>Portfolio</h3>
+                  <p><li>Deployed this portfolio using AWS services alongside Terraform</li></p>
+                </div>
+
+
             </div>
-            <a href="/assets/documents/Clement Douale DevOps Engineer.pdf" class="cv-link">Download CV <span class="material-icons">file_download</span></a>
-          </div>
-
-  
+        </section>
+    </main>
 
     <footer>
-      <div id="contact">
-        <a href="https://linkedin.com/in/clementdouale" target="_blank">LinkedIn</a>
-        <a href="https://github.com/clementdouale" target="_blank">GitHub</a>
-        <a href="mailto:douale.clement@gmail.com">Email</a>
-        <a href="assets/documents/Clement_Douale_DevOps_Engineer.pdf" download="Resume_ClementDouale">Download Resume</a>
-      </div>
+        <div id="contact">
+            <a href="https://linkedin.com/in/clementdouale" target="_blank">LinkedIn</a>
+            <a href="https://github.com/clementdouale" target="_blank">GitHub</a>
+            <a href="mailto:douale.clement@gmail.com">Email</a>
+            <a href="assets/documents/Clement_Douale_DevOps_Engineer.pdf" download="Resume_ClementDouale">Download Resume</a>
+        </div>
     </footer>
-  
 
     <script src="script.js"></script>
 </body>
