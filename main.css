@@ -207,26 +207,11 @@ a, button {
     justify-content: space-between;
 }
 
-.description-container {
+.self-description-content {
     display: flex;
     align-items: center;
-    justify-content: start;
+    
 }
-
-.description-image {
-    width: 150px;
-    height: 150px; 
-    border-radius: 20%; 
-    margin-right: 80px;
-    margin-left: 60px;
-
-}
-
-.description-text {
-    text-align: left;
-    max-width: 80%; 
-}
-
 
 
 #experience {
@@ -344,5 +329,9 @@ a, button {
     }
 }
 
-
+.clement-photo{
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
 

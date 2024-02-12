@@ -1,5 +1,4 @@
 
-// Existing CV Link Interactivity Code
 const cvLink = document.querySelector('.cv-link');
 cvLink.addEventListener('mouseover', () => {
   cvLink.style.backgroundColor = '#0069d9';

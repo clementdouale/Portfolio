@@ -6,3 +6,4 @@ output "s3_bucket_url" {
 output "route53_zone_id" {
   value = aws_route53_zone.my_portfolio_zone.zone_id
 }
+

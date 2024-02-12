@@ -2,14 +2,11 @@ resource "aws_cloudfront_distribution" "portfolio_distribution" {
   origin {
     domain_name = aws_s3_bucket.my_portfolio_bucket.bucket_regional_domain_name
     origin_id   = "S3-clementd-portfolio-bucket"
-
-    s3_origin_config {
-      origin_access_identity = aws_cloudfront_origin_access_identity.portfolio_oai.cloudfront_access_identity_path
-    }
   }
 
-  enabled             = true
+  enabled = true
   default_root_object = "index.html"
+
 
   default_cache_behavior {
     allowed_methods  = ["GET", "HEAD"]
@@ -38,7 +35,9 @@ resource "aws_cloudfront_distribution" "portfolio_distribution" {
   }
 
   viewer_certificate {
-    cloudfront_default_certificate = true
+    acm_certificate_arn = aws_acm_certificate.my_portfolio_cert.arn
+    ssl_support_method  = "sni-only"
+    minimum_protocol_version = "TLSv1.2_2019"
   }
 
   # depends_on = [aws_acm_certificate_validation.my_portfolio_cert_validation]
