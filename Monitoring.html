@@ -4,166 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clément Douale Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="second.css">
 </head>
 <body>
     <header>
         <h1>Clément Douale</h1>
-        <p>DevOps Engineer</p>
+        <p>Monitoring Projects</p>
         <nav>
-          <ul>
-            <li><a href="#self-description">Self Description</a></li>
-            <li><a href="#experience">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+            <ul>
+                <li><a href="#experience">Overall Experience</a></li>
+                <li><a href="#projects">Specific Projects</a></li>
+                <li><a href="index.html">Back to main page</a></li>
+            </ul>
         </nav>
     </header>
 
     <main>
-        <section id="self-description">
-            <h2>Self-Description</h2>
-            <img> <a href="/assets/images/Clement Profesionnal Photo.jpg"></a> <img>
-            <p>A recent Computer Engineering graduate with a significant 3-year experience in Information Systems, I have excelled in various roles ranging from team member to team leader. My expertise encompasses designing microservices, developing robust backend and frontend solutions for both web and mobile platforms, including Android and iOS. The core part of my journey includes orchestrating deployments, transitioning on-premise infrastructures to containerized ones and cloud-based platforms,  along with extensive testing and monitoring to detect, analyze and solve performance problems.</p>
-        </section>
-
-
-        <section id="experience">
-            <h2>Experience Highlights : Navigate through my projects</h2>
-    
-            
-            <div class="project" data-project="devops">
-              <a href="DevOps.html">Devops Projects</a>
-            </div>
-        
-    
-              <div class="project">
-                    <h3>Quality Assurance</h3>
-                    <p><li>Proficient in testing tools like Postman, Selenium, Jmeter, Neoload</li></p>
-                    <p><li>Experience in setting up CI/CD pipelines using Git</li></p>
-              </div>
-    
-              <div class="project">
-                    <h3>Monitoring Systems Expert</h3>
-                    <p><li>Orchestrated and monitored applications and servers, through Linux networking and storage commands and softwares, enabled alerting, increasing by 50% the reactivity to handle and resolve issues. Linux, Elastic Stack, Grafana, Prometheus, Kafka, Dynatrace, Datadog, Python
-                        Experience with Grafana, Prometheus, Elastic Stack, Dynatrace, and Datadog</li></p>
-              </div>
-
-              <div class="project">
-                  <h3>Overall Full Stack Engineer Experience</h3>
-                  <p><li>Developed APIs using Java, Spring Boot Framework, and MVC pattern. </li></p>
-                  <p><li>Implemented authentication using Keycloak for OAuth tokens, integrated with Google Identity Provider.</li> </p>
-                  <p><li>Managed data with MySQL database systems. Conducted regression and functional testing with Postman.</li></p>
-                  <p> <li>Frontend development using Flutter & Dart along with BLOC library for state management. Authored a blog post on BLOC for state management.</li></p>
-                  <p> <a href="https://medium.com/leanovia/application-mobile-state-management-library-bloc-e11a72a101b" target="_blank">Read Blog Post</a></p>
-              </div>
-    
-              <div class="project">
-                    <h3>Time and Projects Management for Consultants</h3>
-                    <p><li>Built a system for consultants to track time spent on various projects, across diverse clients, through different tasks, enhancing productivity and project management. </li> </p>
-                    <p><li>Integrated features for scheduling, reporting, and real-time updates.</li></p>
-              </div>
-    
-              <div class="project">
-                <h3>Inventory Management System</h3>
-                <p><li>Developed an application to manage company inventory including PCs, books, keys.</li></p>
-                <p><li>Implemented features for tracking, updating, and reporting inventory status. </li></p>
-                <p><li>Push and mail notification system using Kafka when an alert was sent through the creation of an issue.</li></p>
-              </div>
-    
-              <div class="project">
-                <h3>Days Off Management Application</h3>
-                <p><li>Created a system for managing employee leave requests and approvals. </li></p>
-                <p><li>Incorporated a calendar view for easy tracking of team availability and leave balances. </li></p>
-                <p><li>Incorporated history review to follow each request, approval, and cancelation.</li></p>
-                <p><li>Integrated the system with Google Calendar and implemented email and push notifications using Kafka to notify managers of employee requests.</p>
-              </div>
-    
-              <div class="project">
-                <h3>Employee Management System</h3>
-                <p><li>Developed a comprehensive solution for managing employee data, performance reviews, and departmental information.</li></p>
-                <p><li>Included features for data visualization and easy access to employee records.</li></p>
-              </div>
-    
-              <div class="project">
-                <h3>Invoices Management Application</h3>
-                <p><li>Built an application for generating, tracking, and managing invoices. </li></p>
-                <p><li>Streamlined the process of invoice creation, approval, and distribution. </li></p>
-                <p><li>Implemented a mail and push notification system using Kafka to alert about upcoming invoice payment dates.</li></p>
-              </div>
-    
-              <div class="project">
-                <h3>Form Students Evaluating Application</h3>
-                <p><li>Built an application for generating, updating and completing forms aimed at students for exams.</li></p>
-              </div>
-    
-              <div class="project">
-                <h3>Chat Application</h3>
-                <p><li>Developed a real-time web-application to handle private and group communications using Javascript stack with NodeJS and NextJS.</li></p>
-              </div>
-    
-
-              <div class="project">
-                <h3>Project Leadership</h3>
-                <p><li>Demonstrated leadership in several project initiatives, applying DevOps principles in practical IT environments</li></p>
-              </div>
+        <section id="experience" class="big-box">
+            <h2>Overall Monitoring Experience</h2>
+                <p><li>Used Dynatrace and Nagios to monitor production environments, track problems and alerts</li></p>
+                <p><li>Installed server and application agents (ELK Stack agents) to track performance alongside Kibana visualisation</li> </p>
+                <p><li>Configured Grafana, Prometheus and ELK Stack on-premise and Openshift environments</li></p>
         </section>
         
-        
-        <br>
-        <br>
-        <div class="toolkit-container">
-            <h1>My Favorite Toolkit</h1>
-            <div class="toolkit-card-container">
-              <div class="toolkit-card">
-                <h2>Frontend</h2>
-                <ul>
-                  <li>Next.js</li>
-                  <li>TailwindCSS</li>
-                </ul>
-              </div>
-              <div class="toolkit-card">
-                <h2>Smart Contracts</h2>
-                <ul>
-                  <li>Solidity</li>
-                  <li>Ethereum</li>
-                </ul>
-              </div>
-              <div class="toolkit-card">
-                <h2>Backend</h2>
-                <ul>
-                  <li>Node.js</li>
-                  <li>SQL</li>
-                  <li>SQL</li>
-                </ul>
-              </div>
-              <div class="toolkit-card">
-                <h2>CI/CD</h2>
-                <ul>
-                  <li>Docker</li>
-                </ul>
-              </div>
-              <div class="toolkit-card">
-                <h2>Design</h2>
-                <ul>
-                  <li>Figma</li>
-                </ul>
-              </div>
-            </div>
-            <a href="/assets/documents/Clement Douale DevOps Engineer.pdf" class="cv-link">Download CV <span class="material-icons">file_download</span></a>
-          </div>
+        <section id="projects" class="big-box">
+            <h2>Projects</h2>
+            <div class="project-row">
+                <div class="project">
+                    <h3>Insurance Applications Production environment</h3>
+                    <p><li>Enhanced Dynatrace usage by creating dashboards, thresholds and alerts</li> </p>
+                    <p><li>Used Dynatrace to identify network, server, databases and application issues</li></p>
+                    <p><li>Did continous feedback with the development and infrastructure team on detected problems and gave advice to fix them</li></p>
+                </div>
 
-  
+                <div class="project">
+                    <h3>Load testing monitoring</h3>
+                    <p><li>Configured and used InfluxDB and Grafana to track real-time load-test and provide useful metrics to determine the progress of the test and potential issues</li></p>
+                    <p><li>Implemented features for tracking, updating, and reporting inventory status. </li></p>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer>
-      <div id="contact">
-        <a href="https://linkedin.com/in/clementdouale" target="_blank">LinkedIn</a>
-        <a href="https://github.com/clementdouale" target="_blank">GitHub</a>
-        <a href="mailto:douale.clement@gmail.com">Email</a>
-        <a href="assets/documents/Clement_Douale_DevOps_Engineer.pdf" download="Resume_ClementDouale">Download Resume</a>
-      </div>
+        <div id="contact">
+            <a href="https://linkedin.com/in/clementdouale" target="_blank">LinkedIn</a>
+            <a href="https://github.com/clementdouale" target="_blank">GitHub</a>
+            <a href="mailto:douale.clement@gmail.com">Email</a>
+            <a href="assets/documents/Clement_Douale_DevOps_Engineer.pdf" download="Resume_ClementDouale">Download Resume</a>
+        </div>
     </footer>
-  
 
     <script src="script.js"></script>
 </body>
