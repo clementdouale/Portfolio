@@ -35,7 +35,7 @@ header {
     padding: 1em 0;
 }
 
-/* Adjust the size and margin for better alignment and appearance */
+
 header h1 {
     margin-bottom: 0.5em;
     font-size: 2em;
@@ -64,14 +64,14 @@ header p {
 
 
 .project a {
-    background-color: #414345; /* Primary Color */
+    background-color: #414345; 
     color: white;
     padding: 15px 55px;
     border-radius: 10px;
 }
 
 .project a:hover, .cv-link:hover {
-    background-color: #504d4d; /* Darker shade of Primary Color */
+    background-color: #504d4d; 
 }
 
 
@@ -87,7 +87,7 @@ header p {
 section {
     margin: 1em 5%;
     padding: 1em;
-    text-align: left; /* Align text to left for better readability */
+    text-align: left; 
 }
 
 
@@ -117,6 +117,8 @@ footer {
     color: white;
 }
 
+
+
 footer a {
     color: white;
     margin: 0 10px;
@@ -129,7 +131,7 @@ footer a:hover {
 
 
 nav ul li a:hover {
-    background-color: #0056b3; /* Darker shade of Primary Color */
+    background-color: #0056b3; 
 }
 
 a, button {
@@ -148,7 +150,7 @@ a, button {
     padding: 0;
     display: none;
     position: absolute;
-    top: 60px; /* Adjust this based on your header's height */
+    top: 60px; 
     right: 10px;
     background-color: #373b3e;
     border-radius: 5px;
@@ -180,7 +182,7 @@ a, button {
     }
 
     header {
-        position: relative; /* For absolute positioning of the menu icon */
+        position: relative; 
     }
 
     .description-container {
@@ -198,8 +200,8 @@ a, button {
 }
 
 #self-description {
-    background-color: #685a5a; /* Or any other color you prefer */
-    border-radius: 15px; /* Rounded corners */
+    background-color: #685a5a; 
+    border-radius: 15px; 
     padding: 20px;
     margin: 100px;
     align-items: center;
@@ -213,9 +215,9 @@ a, button {
 }
 
 .description-image {
-    width: 150px; /* Adjust as needed */
-    height: 150px; /* Adjust as needed */
-    border-radius: 20%; /* Circular Image */
+    width: 150px;
+    height: 150px; 
+    border-radius: 20%; 
     margin-right: 80px;
     margin-left: 60px;
 
@@ -223,14 +225,14 @@ a, button {
 
 .description-text {
     text-align: left;
-    max-width: 80%; /* Adjust based on image size */
+    max-width: 80%; 
 }
 
 
 
 #experience {
-    background-color: #322d34; /* Or any other color you prefer */
-    border-radius: 15px; /* Rounded corners */
+    background-color: #322d34; 
+    border-radius: 15px; 
     padding: 20px;
     margin: 100px;
     align-items: center;
@@ -238,8 +240,8 @@ a, button {
 }
 
 #techstack {
-    background-color: #2d3134; /* Or any other color you prefer */
-    border-radius: 15px; /* Rounded corners */
+    background-color: #2d3134; 
+    border-radius: 15px; 
     padding: 20px;
     margin: 100px;
     align-items: center;
@@ -275,7 +277,6 @@ a, button {
     background-color: white;
     color: #333;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     flex-grow: 1;
     margin: 0 10px;
 }
@@ -285,6 +286,7 @@ a, button {
     display: flex;
     justify-content: space-between;
 }
+
 .stack-sections  {
     display: flex;
     justify-content: space-between;
@@ -297,13 +299,24 @@ a, button {
 }
 
 .devops-sections > div {
-    margin-right: 10px;
+    margin-right: 40px;
+    
 }
+
+.devops-section, .stack-section {
+    text-align: center; 
+}
+
+.devops-section ul, .stack-section ul {
+    display: inline-block; 
+    text-align: left; 
+}
+
 
 .full-stack {
     display: flex;
     justify-content: space-between;
-    flex-grow: 2; /* Full-stack card takes twice as much space as QA */
+    flex-grow: 2; 
 }
 
 .qa {
