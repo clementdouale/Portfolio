@@ -10,177 +10,141 @@
     <header>
         <h1>Clément Douale</h1>
         <p>DevOps Engineer</p>
+        <nav>
+          <ul>
+            <li><a href="#self-description">Self Description</a></li>
+            <li><a href="#experience">Projects</a></li>
+            <li><a href="#techstack">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
     </header>
-
-    <nav>
-      <ul>
-        <li><a href="#self-description">Self Description</a></li>
-        <li><a href="#experience">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  
-
     <main>
         <section id="self-description">
             <h2>Self-Description</h2>
-            <img>
+            <img> <a href="/assets/images/Clement Profesionnal Photo.jpg"></a> <img>
             <p>A recent Computer Engineering graduate with a significant 3-year experience in Information Systems, I have excelled in various roles ranging from team member to team leader. My expertise encompasses designing microservices, developing robust backend and frontend solutions for both web and mobile platforms, including Android and iOS. The core part of my journey includes orchestrating deployments, transitioning on-premise infrastructures to containerized ones and cloud-based platforms,  along with extensive testing and monitoring to detect, analyze and solve performance problems.</p>
         </section>
 
+
         <section id="experience">
-            <h2>Experience Highlights</h2>
+            <h2>Experience Highlights : Navigate through my projects</h2>
     
-            <div class="project">
-                <h3>Overall DevOps Engineer Experience</h3>
-                    <p><li>Deployed applications on on-premise Linux servers with Linux networking configurations, Ansible and Python Scripts </li></p>
-                    <p><li>Developed automated Python scripts to deploy load testing infrastructures for testers, based on multi-platforms depending on their needs (Docker, Kubernetes, On-premise), reducing by 75% the time to set up the test environment.</li></p>
-                    <p><li>Led the automation of end-to-end infrastructures and applications deployments, and maintained it available and scalable, reducing disaster recovery deployment time by threefold and ensuring the execution of tests pipelines after commits and before deployments. OVH, VMWare and Vcenter, AWS, Openshift, Kubernetes, Helm, Terraform, Packer, Ansible, Gitlab CI/CD. </li></p>
-                    <p><li>Implemented basic infrastructure solutions on AWS IaaS using EC2, RDS, PVC, Route53.</li></p>
-                </div>
-    
-                <div class="project">
-                    <h3>Quality Assurance</h3>
-                    <p><li>Proficient in testing tools like Postman, Selenium, Jmeter, Neoload</li></p>
-                    <p><li>Experience in setting up CI/CD pipelines using Git</li></p>
-                </div>
-    
-                <div class="project">
-                    <h3>Monitoring Systems Expert</h3>
-                    <p><li>Orchestrated and monitored applications and servers, through Linux networking and storage commands and softwares, enabled alerting, increasing by 50% the reactivity to handle and resolve issues. Linux, Elastic Stack, Grafana, Prometheus, Kafka, Dynatrace, Datadog, Python
-                        Experience with Grafana, Prometheus, Elastic Stack, Dynatrace, and Datadog</li></p>
-                </div>
+            
+            <div class="project" data-project="devops">
+              <a href="DevOps.html">Devops</a>
+            </div>
 
-                <h3>Overall Full Stack Engineer Experience</h3>
-                <p><li>Developed APIs using Java, Spring Boot Framework, and MVC pattern. </li></p>
-                <p><li>Implemented authentication using Keycloak for OAuth tokens, integrated with Google Identity Provider.</li> </p>
-                <p><li>Managed data with MySQL database systems. Conducted regression and functional testing with Postman.</li></p>
-                <p> <li>Frontend development using Flutter & Dart along with BLOC library for state management. Authored a blog post on BLOC for state management.</li></p>
-                <p> <a href="https://medium.com/leanovia/application-mobile-state-management-library-bloc-e11a72a101b" target="_blank">Read Blog Post</a></p>
+            <div class="project" data-project="Monitoring">
+              <a href="Monitoring.html">Monitoring</a>
             </div>
-    
-            <div class="project">
-                <h3>Time and Projects Management for Consultants</h3>
-                <p><li>Built a system for consultants to track time spent on various projects, across diverse clients, through different tasks, enhancing productivity and project management. </li> </p>
-                <p><li>Integrated features for scheduling, reporting, and real-time updates.</li></p>
-            </div>
-    
-            <div class="project">
-                <h3>Inventory Management System</h3>
-                <p><li>Developed an application to manage company inventory including PCs, books, keys.</li></p>
-                <p><li>Implemented features for tracking, updating, and reporting inventory status. </li></p>
-                <p><li>Push and mail notification system using Kafka when an alert was sent through the creation of an issue.</li></p>
-            </div>
-    
-            <div class="project">
-                <h3>Days Off Management Application</h3>
-                <p><li>Created a system for managing employee leave requests and approvals. </li></p>
-                <p><li>Incorporated a calendar view for easy tracking of team availability and leave balances. </li></p>
-                <p><li>Incorporated history review to follow each request, approval, and cancelation.</li></p>
-                <p><li>Integrated the system with Google Calendar and implemented email and push notifications using Kafka to notify managers of employee requests.</p>
-            </div>
-    
-            <div class="project">
-                <h3>Employee Management System</h3>
-                <p><li>Developed a comprehensive solution for managing employee data, performance reviews, and departmental information.</li></p>
-                <p><li>Included features for data visualization and easy access to employee records.</li></p>
-            </div>
-    
-            <div class="project">
-                <h3>Invoices Management Application</h3>
-                <p><li>Built an application for generating, tracking, and managing invoices. </li></p>
-                <p><li>Streamlined the process of invoice creation, approval, and distribution. </li></p>
-                <p><li>Implemented a mail and push notification system using Kafka to alert about upcoming invoice payment dates.</li></p>
-            </div>
-    
-            <div class="project">
-                <h3>Form Students Evaluating Application</h3>
-                <p><li>Built an application for generating, updating and completing forms aimed at students for exams.</li></p>
-            </div>
-    
-            <div class="project">
-                <h3>Chat Application</h3>
-                <p><li>Developed a real-time web-application to handle private and group communications using Javascript stack with NodeJS and NextJS.</li></p>
-            </div>
-    
 
-            <div class="project">
-                <h3>Project Leadership</h3>
-                <p><li>Demonstrated leadership in several project initiatives, applying DevOps principles in practical IT environments</li></p>
+            <div class="project" data-project="Full-stack">
+              <a href="FullStack.html">Full-stack</a>
+            </div>
+
+            <div class="project" data-project="QA">
+              <a href="QA.html">Quality Assurance</a>
             </div>
         </section>
         
-        <h2>Screenshot examples</h2>
-        <img src="images/daysoff.png" alt="view of days-off microservice">
-        <p><u><i>Example views of Days off management microservice</i></u></p>
-        <img src="images/postman.png" alt="Test Cases Postman">
-        <p><u><i>Examples of Postman Collections</i></u></p>
-        <img src="images/swagger.png" alt="Swagger API">
-        <p><u><i>Used Swagger to manage a strong and useful documentation for all projects</i></u></p>
-
-        
-        <br>
-        <br>
+        <section id="techstack">
         <div class="toolkit-container">
-            <h1>My Favorite Toolkit</h1>
-            <div class="toolkit-card-container">
-              <div class="toolkit-card">
-                <h2>Frontend</h2>
-                <ul>
-                  <li>Next.js</li>
-                  <li>TailwindCSS</li>
-                </ul>
-              </div>
-              <div class="toolkit-card">
-                <h2>Smart Contracts</h2>
-                <ul>
-                  <li>Solidity</li>
-                  <li>Ethereum</li>
-                </ul>
-              </div>
-              <div class="toolkit-card">
-                <h2>Backend</h2>
-                <ul>
-                  <li>Node.js</li>
-                  <li>SQL</li>
-                  <li>SQL</li>
-                </ul>
-              </div>
-              <div class="toolkit-card">
-                <h2>CI/CD</h2>
-                <ul>
-                  <li>Docker</li>
-                </ul>
-              </div>
-              <div class="toolkit-card">
-                <h2>Design</h2>
-                <ul>
-                  <li>Figma</li>
-                </ul>
-              </div>
+          <div class="toolkit-container">
+            <h1>Tech Stack Summary</h1>
+            <div class="toolkit-row"> <!-- DevOps Row -->
+                <div class="toolkit-card devops">
+                    <h3>DevOps</h3>
+                    <div class="devops-sections"> <!-- DevOps Sections Wrapper -->
+                        <div class="devops-section">
+                            <h3>IaC</h3>
+                            <ul>
+                                <li>Ansible</li>
+                                <li>Terraform</li>
+                                <li>Packer</li>
+                            </ul>
+                        </div>
+                        <div class="devops-section">
+                            <h3>CI/CD</h3>
+                            <ul>
+                                <li>Gitlab</li>
+                                <li>Jenkins</li>
+                            </ul>
+                        </div>
+                        <div class="devops-section">
+                            <h3>Cloud</h3>
+                            <ul>
+                                <li>AWS</li>
+                            </ul>
+                        </div>
+                        <div class="devops-section">
+                            <h3>Containerization & Virtualization</h3>
+                            <ul>
+                                <li>Docker</li>
+                                <li>Kubernetes</li>
+                                <li>Openshift</li>
+                                <li>VMware</li>
+                            </ul>
+                        </div>
+                        <div class="devops-section">
+                            <h3>Monitoring</h3> 
+                            <ul>
+                                <li>Grafana</li>
+                                <li>Prometheus</li>
+                                <li>ELK Stack</li>
+                                <li>Dynatrace</li>
+                                <li>Datadog</li>
+                            </ul>
+                        </div>
+                        <div class="devops-section">
+                            <h3>Automation</h3> 
+                            <ul>
+                                <li>Python</li>
+                                <li>Shell</li>
+                                <li>Cronjobs</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <a href="/assets/documents/Clement Douale DevOps Engineer.pdf" class="cv-link">Download CV <span class="material-icons">file_download</span></a>
+            <div class="toolkit-row"> <!-- Full-stack and QA Row -->
+                <div class="toolkit-card full-stack">
+                    <h3>Full-stack</h3>
+                    <div class="stack-sections"> <!-- DevOps Sections Wrapper -->
+                      <div class="stack-section">
+                          <h3>BackEnd</h3>
+                            <ul>
+                              <li>Java</li>
+                              <li>PHP</li>
+                              <li>MySQL</li>
+                              <li>PostgreSQL</li>
+                              <li>MongoDB</li>
+                            </ul>
+                      </div>
+                      <div class="stack-section">
+                          <h3>FrontEnd</h3>
+                          <ul>
+                              <li>Flutter</li>
+                              <li>Javascript</li>
+                              <li>React</li>
+                          </ul>
+                      </div>
+                    </div>
+                </div>
+                <div class="toolkit-card qa">
+                    <h3>Quality Assurance</h3>
+                    <ul>
+                        <li>Jmeter</li>
+                        <li>Neoload</li>
+                        <li>Selenium</li>
+                        <li>Postman</li>
+                    </ul>
+                </div>
+            </div>
           </div>
-
-          <section id="skills">
-            <h2>Key Skills and Attributes</h2>
-            <p><li><b>Backend Development:</b> Proficient in Java, Spring Boot, advanced in NodeJS</li></p>
-            <p><li><b>Frontend Development:</b> Skilled in Flutter, React, JavaScript, HTML/CSS</li></p>
-            <p><li><b>DevOps:</b> Proficient in CI/CD pipelines, GitLab, Python and Shell scripting, Kubernetes and Openshift, Helm</li></p>
-            <p><li><b>Cloud Technologies:</b> Advanced knowledge  AWS, Azure, intermediate in Openstack </li></p>
-            <p><li><b>IaC:</b> Proficient in Terraform, Packer, Ansible</li></p>
-            <p><li><b>Monitoring Tools:</b> Skilled in Grafana, Prometheus, Elastic Stack, intermediate in Datadog</li></p>
-            <p><li><b>Microservices Architecture:</b> Proven track record in design, development, and deployment</li></p>
-            <p><li><b> Strong leadership skills, adaptable to various project requirements</b></li></p>
         </section>
 
-        <section id="future">
-            <h2>Future Endeavors</h2>
-            <p>Keen on exploring new opportunities in Korea's tech industry</p>
-            <p>Aiming to enhance collaboration with Korean teams by improving language skills</p>
-        </section>
-    </main>
+  
 
     <footer>
       <div id="contact">

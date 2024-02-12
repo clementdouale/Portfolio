@@ -1,6 +1,3 @@
-document.getElementById('menu-toggle').addEventListener('click', function() {
-    document.getElementById('nav-menu').classList.toggle('active');
-});
 
 // Existing CV Link Interactivity Code
 const cvLink = document.querySelector('.cv-link');
@@ -21,8 +18,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-function toggleMenu() {
-    var menu = document.getElementById("nav-menu");
-    menu.style.display = menu.style.display === "block" ? "none" : "block";
-}
+
+
 
